@@ -1,0 +1,80 @@
+.boom {
+  background: url('../../../public/hero-1-bg.jpg') lightgray 0px -161.113px / 100%
+    140.663% no-repeat;
+  padding: 140px 0 100px 0;
+
+  &__wrapper {
+    padding: 60px 0;
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    align-items: center;
+    justify-items: center;
+    @media (min-width: 1600px) {
+      padding: 0 0 0 200px;
+    }
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__title {
+    color: #fff;
+    font-size: clamp(2rem, 1.409rem + 2.95vw, 3.625rem);
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -0.7px;
+  }
+  &__text {
+    color: rgba(255, 255, 255, 0.88);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -0.44px;
+  }
+  &__card {
+    background: rgba(255, 255, 255, 0.04);
+    // backdrop-filter: blur(1px);
+    display: flex;
+    padding: 10px 24px;
+    flex-direction: column;
+  }
+  &__fist {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 30px 0;
+    &-text {
+      color: rgba(255, 255, 255, 0.88);
+      font-size: clamp(0.75rem, 0.464rem + 0.45vw, 1rem);
+      font-style: normal;
+      font-weight: 500;
+    }
+  }
+  &__second {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+  }
+  &__img {
+    max-width: 744px;
+    width: 100%;
+    // max-width: 768px;
+    // width: clamp(18.75rem, 9.5rem + 49.33vw, 46.5rem);
+    visibility: visible;
+    opacity: 1;
+    // transform: matrix3d(1.2, 0, 0, 0, 0, 1.2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    // transition: opacity 0.6s cubic-bezier(0.25, 0.1, 0.25, 1) 0.2s,
+    //   transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1) 0.2s;
+  }
+
+  &__icons {
+    font-size: 40px;
+    color: #e4d23a;
+  }
+}

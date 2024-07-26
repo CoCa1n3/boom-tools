@@ -1,0 +1,38 @@
+.karta {
+  background: #131119;
+  padding: 100px 0;
+
+  &__title {
+    font-weight: 400;
+    font-size: 32px;
+    color: #fff;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.svg rect {
+  background: #151524;
+  transition: 0.3s;
+  &:hover {
+    fill: #e4d23a;
+    transition: 0s;
+  }
+}
+
+.card {
+  transition: fill 0.5s ease;
+}
+
+.svg {
+  border: 1px solid gray;
+  width: 100%;
+}
+
+.card.active {
+  fill: #e4d23a;
+}
